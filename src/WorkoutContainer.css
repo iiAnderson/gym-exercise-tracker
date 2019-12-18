@@ -1,0 +1,14 @@
+#accordion-header {
+    float:left; /*just to make sure it is*/ 
+    width: 200px;
+}
+
+#accordion-text {
+    text-align:right;
+    width: 300px;
+}
+
+#accordion {
+    overflow: hidden;
+    height:70px;
+}
