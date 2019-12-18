@@ -5,7 +5,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "./Home.css";
-import WorkoutContainer from "./WorkoutContainer";
+import WorkoutContainer from "../workout/WorkoutContainer";
 
 const sections = `arts, automobiles, books, business, fashion, food, health,
 home, insider, magazine, movies, national, nyregion, obituaries,

@@ -1,7 +1,7 @@
 import React from "react";
 import { Router, Route, Link } from "react-router-dom";
-import Home from "./Home";
-import TopBar from "./TopBar";
+import Home from "./pages/Home";
+import TopBar from "./pages/TopBar";
 import { createBrowserHistory as createHistory } from "history";
 import "./App.css";
 import { useState, useEffect } from "react";

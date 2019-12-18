@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
 import Button from 'react-bootstrap/Button';
 import { Text } from 'react';
-import ExerciseContainer from './ExerciseContainer'
+import ExerciseContainer from '../exercise/ExerciseContainer'
 
 import './WorkoutContainer.css';
 
@@ -30,7 +30,6 @@ class WorkoutContainer extends Component {
                 }]
             }]
         };
-        console.log(this.state.workout);
     }
 
     generateExercises(exerciseList) {
@@ -39,10 +38,14 @@ class WorkoutContainer extends Component {
         for (var exerciseKey in exerciseList) {
             var exercise = exerciseList[exerciseKey];
 
-            exerciseContainers.push(<ExerciseContainer sets={exercise.sets} exerciseName={exercise.exerciseName} repRange={exercise.repRange} value={exercise.value} />);
+            exerciseContainers.push(<ExerciseContainer
+                sets={exercise.sets}
+                exerciseName={exercise.exerciseName}
+                repRange={exercise.repRange}
+                value={exercise.value}
+            />);
         }
 
-        console.log(exerciseContainers);
         return exerciseContainers;
     }
 
